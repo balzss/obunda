@@ -55,7 +55,7 @@ jobs:
         run: rm -rf src/app/api
 
       - name: Export static site with Next.js
-        run: npm run export
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -65,7 +65,7 @@ export default function Home() {
             <p className="text-gray-700 leading-relaxed">
               Üdvözöllek a weboldalamon! A nevem Kati, és szenvedélyem a kutyák szépítése és jó közérzetének biztosítása. Célom, hogy minden kutya boldogan és felfrissülve távozzon a szalonomból, miközben a gazdik teljes mértékben elégedettek a végeredménnyel. Óbudai kutyakozmetikámban szeretettel várok minden méretű és fajtájú kutyust.
             </p>
-              <Image src="/kati1.jpeg" alt="" width="180" height="180"/>
+              <Image src="/obunda/kati1.jpeg" alt="" width="180" height="180"/>
             </div>
           </section>
 
