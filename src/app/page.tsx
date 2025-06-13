@@ -1,5 +1,6 @@
 "use client";
 
+import type { SyntheticEvent, RefObject } from 'react'
 import Image from 'next/image'
 import PriceTable from '@/custom/price-table';
 import { useRef } from 'react';
@@ -21,7 +22,7 @@ export default function Home() {
   const idopontRef = useRef(null); // Ref for the booking section
 
   // Reusable function to handle the smooth scroll
-  const scrollToSection = (e, ref) => {
+  const scrollToSection = (e: SyntheticEvent<HTMLAnchorElement, MouseEvent>, ref: RefObject<HTMLAnchorElement | null>) => {
     e.preventDefault();
     if (ref.current) {
       // We calculate the position to account for a potential fixed header
@@ -34,12 +35,11 @@ export default function Home() {
   };
 
   // Handle form submission
-  const handleBookingSubmit = (e) => {
+  const handleBookingSubmit = (e: SyntheticEvent<HTMLButtonElement>) => {
     e.preventDefault();
     // Here you would typically handle the form data,
     // for example, by sending it to a server or an API.
     alert("Köszönjük a megkeresést! Hamarosan felvesszük veled a kapcsolatot.");
-    e.target.reset(); // Reset form fields after submission
   };
 
 
@@ -59,29 +59,29 @@ export default function Home() {
 
         <main className="w-full max-w-2xl my-16 space-y-24">
           {/* -- Introduction Section -- */}
-          <section ref={rolamRef} className="scroll-mt-24">
+          <section ref={rolamRef} className="scroll-mt-16">
             <h2 className="text-3xl font-semibold mb-4">Rólam</h2>
             <div className="flex gap-4 flex-wrap sm:flex-nowrap">
             <p className="text-gray-700 leading-relaxed">
               Üdvözöllek a weboldalamon! A nevem Kati, és szenvedélyem a kutyák szépítése és jó közérzetének biztosítása. Célom, hogy minden kutya boldogan és felfrissülve távozzon a szalonomból, miközben a gazdik teljes mértékben elégedettek a végeredménnyel. Óbudai kutyakozmetikámban szeretettel várok minden méretű és fajtájú kutyust.
             </p>
-              <Image src="/obunda/kati1.jpeg" alt="" width="180" height="180"/>
+              <Image src="/kati1.jpeg" alt="" width="180" height="180"/>
             </div>
           </section>
 
           {/* -- Pricing Section -- */}
-          <section ref={araimRef} className="scroll-mt-24">
+          <section ref={araimRef} className="scroll-mt-16">
             <h2 className="text-3xl font-semibold mb-4">Áraim</h2>
             <PriceTable />
           </section>
 
           {/* -- Booking Section (with Shadcn UI) -- */}
-          <section ref={idopontRef} className="scroll-mt-24">
+          <section ref={idopontRef} className="scroll-mt-16">
             <h2 className="text-3xl font-semibold mb-4">Időpont foglalás</h2>
             <p className="text-sm text-muted-foreground mb-6 text-black">
                 Az űrlap kitöltése nem minősül végleges foglalásnak. A megadott elérhetőségeken felvesszük veled a kapcsolatot az időpont egyeztetése céljából.
             </p>
-            <form onSubmit={handleBookingSubmit} className="space-y-6">
+            <div className="flex flex-col gap-4">
                 <div className="grid w-full items-center gap-1.5">
                     <Label htmlFor="ownerName">Gazdi neve</Label>
                     <Input type="text" id="ownerName" name="ownerName" required placeholder="Kovács János" />
@@ -98,14 +98,15 @@ export default function Home() {
                     <Label htmlFor="message">Üzenet (pl. kutya fajtája, igényelt szolgáltatás)</Label>
                     <Textarea id="message" name="message" placeholder="Kérem írja le a kutyus fajtáját és a kért szolgáltatást..." />
                 </div>
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full" onClick={handleBookingSubmit}>
                     Időpontot kérek
                 </Button>
-            </form>
+
+            </div>
           </section>
 
           {/* -- Contact Section -- */}
-          <section ref={kapcsolatRef} className="scroll-mt-24">
+          <section ref={kapcsolatRef} className="scroll-mt-16">
             <h2 className="text-3xl font-semibold mb-4">Kapcsolat</h2>
             <div className="text-gray-700 space-y-2">
                 <p><strong>Cím:</strong> 1034 Budapest, Tímár utca 31.</p>
@@ -116,7 +117,7 @@ export default function Home() {
           </section>
 
           {/* -- Rules Section -- */}
-          <section ref={hazirendRef} className="scroll-mt-24">
+          <section ref={hazirendRef} className="scroll-mt-16">
             <h2 className="text-3xl font-semibold mb-4">Házirend</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
               <li>Kérlek, érkezz pontosan a megbeszélt időpontra.</li>
