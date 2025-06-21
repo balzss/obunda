@@ -12,25 +12,25 @@ const testimonialsData: Testimonial[] = [
   {
     id: 1,
     quote:
-      'Molly kutyusom sosem volt még ilyen puha és illatos! Profi hely, maximálisan elégedettek vagyunk. Csak ajánlani tudom mindenkinek!',
-    author: 'Anna',
-    petName: 'Molly, bichon',
+      'Gyönyôrûen és boldogan kaptuk vissza a kutyusunkat. Pedig nem volt egyszerû a  rasztás szôrcsomôkat kibontani... A törpe uszkárunk még soha nem volt lenyirva ilyen szépen mint ahogy Bakács Kati kutyakozmetikus profin elkészítette. Hálásan köszönjük. Biztos ide jövünk legközelebb is. ❤️',
+    author: 'Hajni',
+    petName: 'Málna, uszkár',
     rating: 5,
   },
   {
     id: 2,
     quote:
-      'Nagyon félős kiskutyával érkeztünk, de a türelmes és szakszerű hozzáállás csodát tett. A végeredmény gyönyörű lett, és Mancs is jól érezte magát.',
-    author: 'Péter',
-    petName: 'Mancs, keverék',
+      'Szerintem nagyon szép lettem a kozmetika után! Masnit is kaptam Katitól 💖 Nagyon szeretek hozzá járni, mindig kókuszillatom van utána, ezért még több puszit kapok otthon, mint amikor sajtszagúan, koszos szőrrel elmegyek Katihoz. Kösz Kati, jövök legközelebb is! 🦄🦢❤️',
+    author: 'Orsi',
+    petName: 'Millie, golden retriever',
     rating: 5,
   },
   {
     id: 3,
     quote:
-      'A legjobb kutyakozmetika a városban! Mindig precíz, tiszta munka. Rex már alig várja a következő alkalmat, ami mindent elárul.',
-    author: 'Lilla',
-    petName: 'Rex, németjuhász',
+      'Régóta járunk Katihoz kutyakozmetikára. Nem volt kérdés, hogy megyünk utána az új óbudai saját helyére is, mert Barack nem sok embert visel el sajnos, de Katit nagyon szereti, mindig nyugodt szívvel hagyom ott nála, és igazi minta kutyaként kapom vissza. Kati egyébként jófej, laza és nagyon lelkiismeretes, ajánlom mindenkinek!',
+    author: 'Lili',
+    petName: 'Barack, bichon',
     rating: 5,
   },
 ]

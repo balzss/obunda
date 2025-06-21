@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react'
 
 export default function KapcsolatPage() {
   return (
@@ -6,15 +7,32 @@ export default function KapcsolatPage() {
       <h2 className="text-3xl font-semibold mb-4">Kapcsolat</h2>
 
       <div className="flex flex-col gap-2">
-        <p className="text-black">
+        <p className="text-black flex gap-2 items-center">
+          <Phone size={18} />
           <span className="font-bold">Telefon:</span>{' '}
           <Link href="tel:+36305866487">+36 30 586 6487</Link>
         </p>
-        <p className="text-black">
+        <p className="text-black flex gap-2 items-center">
+          <Mail size={18} />
           <span className="font-bold">Email:</span>{' '}
           <Link href="mailto:bakacskatalin@gmail.com">bakacskatalin@gmail.com</Link>
         </p>
-        <p className="text-black">
+        <p className="text-black flex gap-2 items-center">
+          <Facebook size={18} />
+          <span className="font-bold">Facebook:</span>{' '}
+          <Link href="https://www.facebook.com/profile.php?id=61576907870809" target="_blank">
+            Óbunda kutyakozmetika
+          </Link>
+        </p>
+        <p className="text-black flex gap-2 items-center">
+          <Instagram size={18} />
+          <span className="font-bold">Instagram:</span>{' '}
+          <Link href="https://www.instagram.com/obunda_kutyakozmetika" target="_blank">
+            @obunda_kutyakozmetika
+          </Link>
+        </p>
+        <p className="text-black flex gap-2 items-center">
+          <MapPin size={18} />
           <span className="font-bold">Cím:</span> Budapest, Tímár u. 31, 1034
         </p>
 

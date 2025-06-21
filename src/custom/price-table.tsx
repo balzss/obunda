@@ -38,7 +38,7 @@ const kistestuekPriceList = [
     price: 10000,
   },
   {
-    name: 'Szálkás tacskó trimmelme',
+    name: 'Szálkás tacskó trimmelve',
     price: 12000,
   },
   {
@@ -53,7 +53,7 @@ const kozepesTestuekPriceList = [
     price: 12000,
   },
   {
-    name: 'Spániel trimmelme',
+    name: 'Spániel trimmelve',
     price: 14500,
   },
   {
@@ -158,7 +158,7 @@ const uszkarokPriceList = [
     price: 13500,
   },
   {
-    name: 'Óriás (45 cm-)',
+    name: 'Óriás (45 cm felett)',
     price: 19000,
   },
 ]
@@ -169,7 +169,7 @@ const schnauzerekPriceList = [
     price: 11000,
   },
   {
-    name: 'Törpe trimmelme',
+    name: 'Törpe trimmelve',
     price: 13500,
   },
   {
@@ -177,7 +177,7 @@ const schnauzerekPriceList = [
     price: 13000,
   },
   {
-    name: 'Közép trimmelme',
+    name: 'Közép trimmelve',
     price: 15500,
   },
   {
@@ -196,7 +196,7 @@ const tovabbiSzolgaltatasokPriceList = [
     price: 2000,
   },
   {
-    name: 'Búzmiri gy tisztítás',
+    name: 'Bűzmirigy tisztítás',
     price: 1500,
   },
   {
@@ -204,7 +204,7 @@ const tovabbiSzolgaltatasokPriceList = [
     price: 1500,
   },
   {
-    name: 'Ultrahangos fogkőzedés',
+    name: 'Ultrahangos fogkőszedés',
     price: 16000,
   },
 ]

@@ -13,12 +13,16 @@ const navItems = [
     href: '/araim',
   },
   {
-    label: 'Kapcsolat',
-    href: '/kapcsolat',
+    label: 'Szolgáltatásaim',
+    href: '/szolgaltatasaim',
   },
   {
     label: 'Házirend',
     href: '/hazirend',
+  },
+  {
+    label: 'Kapcsolat',
+    href: '/kapcsolat',
   },
 ]
 
@@ -27,12 +31,12 @@ export function Heading() {
 
   return (
     <div className="flex flex-col items-center p-4 mt-4 w-full">
-      <h1>
+      <h1 className="text-center">
         <Link href="/" className="text-4xl sm:text-5xl text-center font-bold">
           Óbunda Kutyakozmetika
         </Link>
       </h1>
-      <nav className="flex gap-4 mt-8">
+      <nav className="flex gap-4 mt-8 flex-wrap justify-center">
         {navItems.map((item) => (
           <Link
             key={item.href}
