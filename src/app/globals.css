@@ -9,8 +9,20 @@ body {
   color: #c670f4;
 }
 
-table {
+table, p, nav > a {
   color: black;
+}
+
+a {
+  color: #c670f4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 > a:hover {
+  text-decoration: none;
 }
 
 :root {
