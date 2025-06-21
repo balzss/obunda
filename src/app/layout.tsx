@@ -4,6 +4,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Óbunda Kutyakozmetika',
+  icons: {
+    icon: `/icon1.png`,
+  },
 }
 
 export default function RootLayout({
