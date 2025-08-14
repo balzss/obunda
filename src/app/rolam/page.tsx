@@ -5,33 +5,50 @@ export default function RolamPage() {
   return (
     <section>
       <h2 className="text-3xl font-semibold mb-4">Rólam</h2>
-      <div className="flex gap-2 flex-wrap sm:flex-nowrap mb-8 items-center sm:items-start">
-        <p className="text-gray-700 leading-relaxed">
-          Sziasztok kedves Vendégeim! Hadd mutatkozzam be pár szóban, de nem írnám le a sablonos
-          szöveget, hogy mindig is kutyákkal akartam foglakozni, mert nem is tudtam hogy ez
-          lehetséges. Sokat tengődtem ifjabb koromban mi is szeretnék lenni, irigykedve néztem
-          osztálytársaimat, hogy fiatalon tudták, hogy orvosok, ügyvédek vagy efféle komoly
-          dolgokkal szeretnének foglalkozni. Elmentem, elvégeztem egy egyetemet, de közben is
-          éreztem, hogy ez nem az amit keresek. Agyaltam, hogy mi az vagy ki az aki tényleg szívből
-          örömet tud okozni nekem, így esett a választás erre a pályára, amit 2021 óta folyamatosan
-          művelek mióta megkaptam az oklevelem. Nem mondom hogy könnyű utat jártam be, mire elértem,
-          hogy saját szalont nyithassak, de erre igazán büszke vagyok. Sose választanék más szakmát,
-          hiszen ebben érzem magam sikeresnek és kiteljesedettnek. Szívügyem a mentett és kóbor
-          kutyusok sorsa, mivel velük nőttem fel amióta az eszemet tudom. Ezer szónak is egy a vége,
-          gyertek és ismerjük meg egymást, hogy egy kölcsönösen alapuló bizalmat tudjunk létrehozni
-          Veled és a kutyusoddal! 💖
+      <div className="relative mb-8">
+        <div className="hidden sm:block float-right ml-6 mb-4">
+          <Image
+            src="/kati4.jpeg"
+            alt="Kati - Kutyakozmetikus"
+            width="300"
+            height="300"
+            className="rounded-lg shadow-lg object-cover w-72 h-72"
+          />
+        </div>
+        <p className="text-gray-700 leading-relaxed text-lg">Óbunda Kutyakozmetika ✂️🐾</p>
+        <p className="text-gray-700 leading-relaxed text-lg mt-4">
+          Örülök, hogy bemutatkozhatok azoknak, akik még nem jártak nálam! Sziasztok, Bakács Kati
+          vagyok, az Óbunda megalapítója.
         </p>
-        <Image
-          src="/kati2.png"
-          alt=""
-          width="180"
-          height="180"
-          style={{
-            transform: 'scale(-1.4, 1.4)',
-            filter: 'drop-shadow(2px 2px 2px #444)',
-          }}
-          className="sm:mt-10 mb-8 mx-auto"
-        />
+        <p className="text-gray-700 leading-relaxed text-lg mt-4">
+          2021-ben szereztem meg a kutyakozmetikus képesítésemet, és azóta több ezer kutyus
+          szépülhetett a kezeim között. Nem szeretnék sablonos bemutatkozással kezdeni – elég annyi,
+          hogy a kutyák egész életem meghatározó részei, és számomra természetes, hogy velük
+          dolgozhatok.
+        </p>
+        <p className="text-gray-700 leading-relaxed text-lg mt-4">
+          Ez az első munkám, amit ennyire szenvedéllyel és lelkiismeretesen végzek. Végre valóra
+          ovált az álmom, és megnyithattam a saját kutyakozmetikámat! Úgy tekintek erre a szakmára,
+          mint egy folyamatosan fejlődő, izgalmas és motiváló hivatásra – amiben mindig van új
+          dolog, amit tanulhatok.
+        </p>
+        <p className="text-gray-700 leading-relaxed text-lg mt-4">
+          Különösen közel áll a szívemhez a mentett kutyusok segítése, hiszen sokszor méltatlanul
+          alulértékeljük a bennük rejlő csodálatos lehetőségeket.
+        </p>
+        <p className="text-gray-700 leading-relaxed text-lg mt-4">
+          Szeretettel várok mindenkit Óbundában – gyertek, ismerkedjünk meg, és tegyük szebbé
+          kutyusotok mindennapjait! 🐶❤️
+        </p>
+        <div className="sm:hidden mt-6 flex justify-center">
+          <Image
+            src="/kati4.jpeg"
+            alt="Kati - Kutyakozmetikus"
+            width="300"
+            height="300"
+            className="rounded-lg shadow-lg object-cover w-64 h-64"
+          />
+        </div>
       </div>
       <Testimonials />
     </section>
