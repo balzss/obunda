@@ -21,6 +21,10 @@ const navItems = [
     href: '/hazirend',
   },
   {
+    label: 'Galéria',
+    href: '/galeria',
+  },
+  {
     label: 'Kapcsolat',
     href: '/kapcsolat',
   },
