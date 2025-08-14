@@ -12,7 +12,7 @@ export default function ObundaMinimalContent() {
           <div className="mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full text-purple-700 text-sm font-medium mb-6">
               <Star className="w-4 h-4 fill-current" />
-              Új szalon, régi szakértelem
+              Új szalon, régi szakértelem Óbudán
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Óbunda megnyitotta
@@ -20,8 +20,8 @@ export default function ObundaMinimalContent() {
               <span className="text-purple-600">kapuit!</span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8">
-              Több éves kutyakozmetikai tapasztalattal várlak Téged és kedvencedet a frissen
-              megnyílt szalonomban, ahol a szeretet, türelem és profi gondoskodás garantált.
+              Több éves kutyakozmetikai tapasztalattal várlak Téged és kedvencedet Óbuda szívében a
+              frissen megnyílt szalonomban, ahol a szeretet, türelem és profi gondoskodás garantált.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
