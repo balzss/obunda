@@ -112,9 +112,15 @@ export default function GaleriaPage() {
     <section>
       <h2 className="text-3xl font-semibold mb-4">Galéria</h2>
       <p className="text-gray-700 mb-6 leading-relaxed">
-        Itt tekintheted meg munkáim eredményeit és a boldog kutyusokat, akik már megfordultak nálam.
-        Minden kép egy-egy sikertörténet, egy-egy elégedett gazdi és szép kutyus bizonyítéka.
-        Kattints bármelyik képre a nagyobb méretű megjelenítéshez!
+        További képekért látogass el{' '}
+        <a href="https://www.facebook.com/profile.php?id=61576907870809" target="_blank">
+          Facebook
+        </a>{' '}
+        vagy{' '}
+        <a href="https://www.instagram.com/obunda_kutyakozmetika" target="_blank">
+          Instagram
+        </a>{' '}
+        oldalamra.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
