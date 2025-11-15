@@ -9,24 +9,20 @@ const navItems = [
     href: '/rolam',
   },
   {
-    label: 'Áraim',
-    href: '/araim',
+    label: 'Időpontfoglalás',
+    href: '/idopontfoglalas',
   },
   {
     label: 'Szolgáltatásaim',
     href: '/szolgaltatasaim',
   },
   {
-    label: 'Házirend',
-    href: '/hazirend',
-  },
-  {
     label: 'Galéria',
     href: '/galeria',
   },
   {
-    label: 'Időpont Foglalás',
-    href: '/idopont-foglalas',
+    label: 'Házirend',
+    href: '/hazirend',
   },
   {
     label: 'Kapcsolat',

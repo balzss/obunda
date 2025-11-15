@@ -12,10 +12,9 @@ export default function RolamPage() {
             alt="Kati - Kutyakozmetikus"
             width="300"
             height="300"
-            className="rounded-lg shadow-lg object-cover w-72 h-72"
+            className="rounded-lg shadow-md object-cover w-72 h-72"
           />
         </div>
-        <p className="text-gray-700 leading-relaxed text-lg">Óbunda Kutyakozmetika ✂️🐾</p>
         <p className="text-gray-700 leading-relaxed text-lg mt-4">
           Örülök, hogy bemutatkozhatok azoknak, akik még nem jártak nálam! Sziasztok, Bakács Kati
           vagyok, az Óbunda megalapítója.
@@ -38,7 +37,7 @@ export default function RolamPage() {
         </p>
         <p className="text-gray-700 leading-relaxed text-lg mt-4">
           Szeretettel várok mindenkit Óbundában – gyertek, ismerkedjünk meg, és tegyük szebbé
-          kutyusotok mindennapjait! 🐶❤️
+          kutyusotok mindennapjait!
         </p>
         <div className="sm:hidden mt-6 flex justify-center">
           <Image
@@ -46,7 +45,7 @@ export default function RolamPage() {
             alt="Kati - Kutyakozmetikus"
             width="300"
             height="300"
-            className="rounded-lg shadow-lg object-cover w-64 h-64"
+            className="rounded-lg shadow-md object-cover w-64 h-64"
           />
         </div>
       </div>

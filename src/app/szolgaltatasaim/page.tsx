@@ -1,4 +1,6 @@
-import { PawPrint } from 'lucide-react'
+import { PawPrint, Calendar } from 'lucide-react'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 export default function SzolgaltatasaimPage() {
   return (
@@ -45,6 +47,12 @@ export default function SzolgaltatasaimPage() {
           <PawPrint size={16} />
           <div>Ultrahangos fogtisztítás</div>
         </li>
+        <Button asChild size="lg" className="mt-4" variant="neutral">
+          <Link href="/idopontfoglalas">
+            <Calendar className="w-5 h-5" />
+            Időpontfoglalás
+          </Link>
+        </Button>
       </ul>
     </section>
   )

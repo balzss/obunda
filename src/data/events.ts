@@ -5,6 +5,7 @@ export interface EventType {
   price: string
   slug: string
   description?: string
+  category: string
 }
 
 export const events: EventType[] = [
@@ -15,6 +16,7 @@ export const events: EventType[] = [
     price: '11.000 Ft-tól',
     slug: 'obunda/westie',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'pomeraniai',
@@ -23,6 +25,7 @@ export const events: EventType[] = [
     price: '10.500 Ft-tól',
     slug: 'obunda/pomeraniai-torpespicc',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'cavalier-standard',
@@ -31,6 +34,7 @@ export const events: EventType[] = [
     price: '10.000 Ft-tól',
     slug: 'obunda/cavalier-king-charles-spaniel-standard',
     description: 'Nyírás nélkül',
+    category: 'Kistestűek',
   },
   {
     id: 'cavalier-nyirva',
@@ -39,6 +43,7 @@ export const events: EventType[] = [
     price: '11.000 Ft-tól',
     slug: 'obunda/cavalier-king-charles-spaniel-nyirva',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'tacsko-nyirva',
@@ -47,6 +52,7 @@ export const events: EventType[] = [
     price: '10.000 Ft-tól',
     slug: 'obunda/szalkas-tacsko-nyirva',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'tacsko-trimmelve',
@@ -55,6 +61,7 @@ export const events: EventType[] = [
     price: '13.000 Ft-tól',
     slug: 'obunda/szalkas-tacsko-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
+    category: 'Kistestűek',
   },
   {
     id: 'bolognese',
@@ -63,6 +70,7 @@ export const events: EventType[] = [
     price: '11.000 Ft-tól',
     slug: 'obunda/bolognese',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'corgi',
@@ -71,6 +79,7 @@ export const events: EventType[] = [
     price: '10.000 Ft-tól',
     slug: 'obunda/corgi',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'shiba-inu',
@@ -79,6 +88,7 @@ export const events: EventType[] = [
     price: '9.500 Ft-tól',
     slug: 'obunda/shiba-inu',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'spaniel-nyirva',
@@ -87,6 +97,7 @@ export const events: EventType[] = [
     price: '12.000 Ft-tól',
     slug: 'obunda/spaniel-nyirva',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'spaniel-trimmelve',
@@ -95,6 +106,7 @@ export const events: EventType[] = [
     price: '15.000 Ft-tól',
     slug: 'obunda/spaniel-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
+    category: 'Közepes testűek',
   },
   {
     id: 'ausztral-juhasz',
@@ -103,6 +115,7 @@ export const events: EventType[] = [
     price: '14.000 Ft-tól',
     slug: 'obunda/ausztral-juhasz',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'sheltie',
@@ -111,6 +124,7 @@ export const events: EventType[] = [
     price: '12.500 Ft-tól',
     slug: 'obunda/sheltie',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'border-collie',
@@ -119,6 +133,7 @@ export const events: EventType[] = [
     price: '13.500 Ft-tól',
     slug: 'obunda/border-collie',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'mudi',
@@ -127,6 +142,7 @@ export const events: EventType[] = [
     price: '10.500 Ft-tól',
     slug: 'obunda/mudi',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'pumi',
@@ -135,6 +151,7 @@ export const events: EventType[] = [
     price: '14.000 Ft-tól',
     slug: 'obunda/pumi',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'lagotto',
@@ -143,6 +160,7 @@ export const events: EventType[] = [
     price: '15.000 Ft-tól',
     slug: 'obunda/lagotto',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'puli-nyirva',
@@ -151,6 +169,7 @@ export const events: EventType[] = [
     price: '14.000 Ft-tól',
     slug: 'obunda/puli-nyirva',
     description: '',
+    category: 'Közepes testűek',
   },
   {
     id: 'husky',
@@ -159,6 +178,7 @@ export const events: EventType[] = [
     price: '16.500 Ft-tól',
     slug: 'obunda/husky',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'malamut',
@@ -167,6 +187,7 @@ export const events: EventType[] = [
     price: '19.000 Ft-tól',
     slug: 'obunda/malamut',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'szamojed',
@@ -175,6 +196,7 @@ export const events: EventType[] = [
     price: '19.000 Ft-tól',
     slug: 'obunda/szamojed',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'berni-pasztor',
@@ -183,6 +205,7 @@ export const events: EventType[] = [
     price: '22.000 Ft-tól',
     slug: 'obunda/berni-pasztor',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'golden-retriever',
@@ -191,6 +214,7 @@ export const events: EventType[] = [
     price: '15.500 Ft-tól',
     slug: 'obunda/golden-retriever',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'nemetjuhasz',
@@ -199,6 +223,7 @@ export const events: EventType[] = [
     price: '16.500 Ft-tól',
     slug: 'obunda/nemetjuhasz',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'skotjuhasz',
@@ -207,6 +232,7 @@ export const events: EventType[] = [
     price: '18.500 Ft-tól',
     slug: 'obunda/skotjuhasz',
     description: '',
+    category: 'Nagytestűek',
   },
   {
     id: 'tacsko',
@@ -215,6 +241,7 @@ export const events: EventType[] = [
     price: '6.500 Ft-tól',
     slug: 'obunda/tacsko',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'francia-bulldog',
@@ -223,6 +250,7 @@ export const events: EventType[] = [
     price: '7.500 Ft-tól',
     slug: 'obunda/francia-bulldog',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'mopsz',
@@ -231,6 +259,7 @@ export const events: EventType[] = [
     price: '7.500 Ft-tól',
     slug: 'obunda/mopsz',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'beagle',
@@ -239,6 +268,7 @@ export const events: EventType[] = [
     price: '8.500 Ft-tól',
     slug: 'obunda/beagle',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'vizsla',
@@ -247,6 +277,7 @@ export const events: EventType[] = [
     price: '9.500 Ft-tól',
     slug: 'obunda/vizsla',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'labrador',
@@ -255,6 +286,7 @@ export const events: EventType[] = [
     price: '10.500 Ft-tól',
     slug: 'obunda/labrador',
     description: '',
+    category: 'Rövidszőrűek',
   },
   {
     id: 'uszkar-toy',
@@ -263,6 +295,7 @@ export const events: EventType[] = [
     price: '10.500 Ft-tól',
     slug: 'obunda/uszkar-toy',
     description: '',
+    category: 'Uszkárok',
   },
   {
     id: 'uszkar-torpe',
@@ -271,6 +304,7 @@ export const events: EventType[] = [
     price: '11.500 Ft-tól',
     slug: 'obunda/uszkar-torpe',
     description: '',
+    category: 'Uszkárok',
   },
   {
     id: 'uszkar-kozep',
@@ -279,6 +313,7 @@ export const events: EventType[] = [
     price: '13.500 Ft-tól',
     slug: 'obunda/uszkar-kozep',
     description: '',
+    category: 'Uszkárok',
   },
   {
     id: 'uszkar-orias',
@@ -287,6 +322,7 @@ export const events: EventType[] = [
     price: '19.500 Ft-tól',
     slug: 'obunda/uszkar-orias',
     description: '',
+    category: 'Uszkárok',
   },
   {
     id: 'fogtisztitas',
@@ -295,6 +331,7 @@ export const events: EventType[] = [
     price: '16.000 Ft-tól',
     slug: 'obunda/ultrahangos-fogtisztitas',
     description: '',
+    category: 'További szolgáltatások',
   },
   {
     id: 'schnauzer-torpe-nyirva',
@@ -303,6 +340,7 @@ export const events: EventType[] = [
     price: '11.000 Ft-tól',
     slug: 'obunda/schnauzer-orias-nyirva',
     description: '',
+    category: 'Schnauzerek',
   },
   {
     id: 'schnauzer-torpe-trimmelve',
@@ -311,6 +349,7 @@ export const events: EventType[] = [
     price: '13.500 Ft-tól',
     slug: 'obunda/schnauzer-orias-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
+    category: 'Schnauzerek',
   },
   {
     id: 'schnauzer-kozep-nyirva',
@@ -319,6 +358,7 @@ export const events: EventType[] = [
     price: '13.000 Ft-tól',
     slug: 'obunda/schnauzer-kozep-nyirva',
     description: '',
+    category: 'Schnauzerek',
   },
   {
     id: 'schnauzer-kozep-trimmelve',
@@ -327,6 +367,7 @@ export const events: EventType[] = [
     price: '15.500 Ft-tól',
     slug: 'obunda/schnauzer-kozep-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
+    category: 'Schnauzerek',
   },
   {
     id: 'schnauzer-orias-nyirva',
@@ -335,6 +376,7 @@ export const events: EventType[] = [
     price: '17.500 Ft-tól',
     slug: 'obunda/schnauzer-orias-nyirva-1',
     description: '',
+    category: 'Schnauzerek',
   },
   {
     id: 'maltai',
@@ -343,6 +385,7 @@ export const events: EventType[] = [
     price: '10.500 Ft-tól',
     slug: 'obunda/maltai',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'yorkshire-nagy',
@@ -351,6 +394,7 @@ export const events: EventType[] = [
     price: '9.500 Ft-tól',
     slug: 'obunda/yorkshire-terrier-5kg-felett',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'yorkshire-kicsi',
@@ -359,6 +403,7 @@ export const events: EventType[] = [
     price: '9.000 Ft-tól',
     slug: 'obunda/yorkshire-terrier-5kg-alatt',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'havanese',
@@ -367,6 +412,7 @@ export const events: EventType[] = [
     price: '10.500 Ft-tól',
     slug: 'obunda/havanese',
     description: '',
+    category: 'Kistestűek',
   },
   {
     id: 'bichon-frise',
@@ -375,5 +421,6 @@ export const events: EventType[] = [
     price: '12.500 Ft-tól',
     slug: 'obunda/bichon-frise',
     description: '',
+    category: 'Kistestűek',
   },
 ]

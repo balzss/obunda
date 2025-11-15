@@ -177,7 +177,7 @@ export default function GaleriaPage() {
       </div>
 
       <div className="text-center text-gray-600 text-sm">
-        <p>💡 Tipp: Kattints bármelyik képre a nagyítási nézethez!</p>
+        <i>Tipp: Kattints bármelyik képre a nagyításhoz</i>
       </div>
 
       <Lightbox

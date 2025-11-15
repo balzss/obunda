@@ -58,7 +58,7 @@ export function Testimonials() {
         {testimonialsData.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="flex flex-col bg-white shadow-lg transition-transform duration-300 hover:scale-103 hover:shadow-xl"
+            className="flex flex-col bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-103 hover:shadow-lg"
           >
             <div className="flex-1 px-4 py-6">
               <div className="flex justify-center items-center">
@@ -74,13 +74,13 @@ export function Testimonials() {
                 <div className="flex-shrink-0">
                   <User className="h-5 w-5 " />
                 </div>
-                <div className="text-black">{testimonial.author}</div>
+                <div className="text-gray-900">{testimonial.author}</div>
               </div>
               <div className="mt-2 flex items-center space-x-2 text-sm">
                 <div className="flex-shrink-0">
                   <PawPrint className="h-5 w-5 " />
                 </div>
-                <span className="text-black">{testimonial.petName}</span>
+                <span className="text-gray-900">{testimonial.petName}</span>
               </div>
             </div>
           </div>

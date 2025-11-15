@@ -296,7 +296,7 @@ export function PriceTable() {
         </TableBody>
       </Table>
 
-      <ul className="list-disc pl-5 space-y-2 text-black mb-4 mt-8">
+      <ul className="list-disc pl-5 space-y-2 text-gray-900 mb-4 mt-8">
         <li>
           Áraim forintban és rendszeresen (4-6 hetente) kozmetikázott kutyusokra értendőek.
           Elhanyagolt szőrzetért és a kutyus viselkedésétől függően felárat számíthatok fel.
@@ -304,7 +304,7 @@ export function PriceTable() {
         <li>Készpénzzel vagy átutalással tudtok nálam fizetni.</li>
         <li>24 órán belüli lemondásért a kozmetika árának 50%-a fizetendő.</li>
       </ul>
-      <div className="text-lg font-bold my-4 text-black">Köszönöm a megértéseteket!</div>
+      <div className="text-lg font-bold my-4 text-gray-900">Köszönöm a megértéseteket!</div>
     </div>
   )
 }
