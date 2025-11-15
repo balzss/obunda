@@ -25,6 +25,10 @@ const navItems = [
     href: '/galeria',
   },
   {
+    label: 'Időpont Foglalás',
+    href: '/idopont-foglalas',
+  },
+  {
     label: 'Kapcsolat',
     href: '/kapcsolat',
   },
