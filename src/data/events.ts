@@ -10,6 +10,24 @@ export interface EventType {
 
 export const events: EventType[] = [
   {
+    id: 'pekingi-palotakutya-nyirva',
+    name: 'Pekingi Palotakutya - Nyírva',
+    duration: '120m',
+    price: '10.500 Ft-tól',
+    slug: 'obunda/pekingi-palotakutya-nyirva',
+    description: '',
+    category: 'Kistestűek',
+  },
+  {
+    id: 'pekingi-palotakutya',
+    name: 'Pekingi Palotakutya',
+    duration: '90m',
+    price: '9.500 Ft-tól',
+    slug: 'obunda/pekingi-palotakutya',
+    description: 'Nyírás nélkül',
+    category: 'Kistestűek',
+  },
+  {
     id: 'westie',
     name: 'Westie',
     duration: '120m',
