@@ -16,6 +16,20 @@ function removeAccents(str: string): string {
     .toLowerCase()
 }
 
+// Utility function to format duration in Hungarian
+function formatDurationHungarian(minutes: number): string {
+  const hours = Math.floor(minutes / 60)
+  const remainingMinutes = minutes % 60
+
+  if (hours === 0) {
+    return `${remainingMinutes} perc`
+  } else if (remainingMinutes === 0) {
+    return `${hours} óra`
+  } else {
+    return `${hours} óra ${remainingMinutes} perc`
+  }
+}
+
 export default function IdopontFoglalasPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [expandedEventId, setExpandedEventId] = useState<string | null>(null)
@@ -43,9 +57,9 @@ export default function IdopontFoglalasPage() {
   }, [])
 
   // Filter events based on search query (accent-insensitive)
-  const filteredEvents = events.filter((event) =>
-    removeAccents(event.name).includes(removeAccents(searchQuery))
-  )
+  const filteredEvents = events
+    .filter((event) => removeAccents(event.name).includes(removeAccents(searchQuery)))
+    .sort((a, b) => a.name.localeCompare(b.name))
 
   // Group events by category
   const categories = [
@@ -180,7 +194,7 @@ export default function IdopontFoglalasPage() {
                             <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-2">
                               <div className="flex items-center gap-1">
                                 <Clock className="w-4 h-4" />
-                                <span>{event.duration}</span>
+                                <span>{formatDurationHungarian(event.durationMinutes)}</span>
                               </div>
                               <div className="flex items-center gap-1">
                                 <span className="font-semibold text-brand-purple-600">

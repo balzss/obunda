@@ -1,7 +1,7 @@
 export interface EventType {
   id: string
   name: string
-  duration: string
+  durationMinutes: number
   price: string
   slug: string
   description?: string
@@ -12,7 +12,7 @@ export const events: EventType[] = [
   {
     id: 'pekingi-palotakutya-nyirva',
     name: 'Pekingi Palotakutya - Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '10.500 Ft-tól',
     slug: 'obunda/pekingi-palotakutya-nyirva',
     description: '',
@@ -21,7 +21,7 @@ export const events: EventType[] = [
   {
     id: 'pekingi-palotakutya',
     name: 'Pekingi Palotakutya',
-    duration: '90m',
+    durationMinutes: 90,
     price: '9.500 Ft-tól',
     slug: 'obunda/pekingi-palotakutya',
     description: 'Nyírás nélkül',
@@ -30,7 +30,7 @@ export const events: EventType[] = [
   {
     id: 'westie',
     name: 'Westie',
-    duration: '120m',
+    durationMinutes: 120,
     price: '11.000 Ft-tól',
     slug: 'obunda/westie',
     description: '',
@@ -39,7 +39,7 @@ export const events: EventType[] = [
   {
     id: 'pomeraniai',
     name: 'Pomerániai törpespicc',
-    duration: '120m',
+    durationMinutes: 120,
     price: '10.500 Ft-tól',
     slug: 'obunda/pomeraniai-torpespicc',
     description: '',
@@ -48,7 +48,7 @@ export const events: EventType[] = [
   {
     id: 'cavalier-standard',
     name: 'Cavalier King Charles Spániel - Standard',
-    duration: '90m',
+    durationMinutes: 90,
     price: '10.000 Ft-tól',
     slug: 'obunda/cavalier-king-charles-spaniel-standard',
     description: 'Nyírás nélkül',
@@ -57,7 +57,7 @@ export const events: EventType[] = [
   {
     id: 'cavalier-nyirva',
     name: 'Cavalier King Charles Spániel - Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '11.000 Ft-tól',
     slug: 'obunda/cavalier-king-charles-spaniel-nyirva',
     description: '',
@@ -66,7 +66,7 @@ export const events: EventType[] = [
   {
     id: 'tacsko-nyirva',
     name: 'Szálkás Tacskó - Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '10.000 Ft-tól',
     slug: 'obunda/szalkas-tacsko-nyirva',
     description: '',
@@ -75,7 +75,7 @@ export const events: EventType[] = [
   {
     id: 'tacsko-trimmelve',
     name: 'Szálkás Tacskó - Trimmelve',
-    duration: '150m',
+    durationMinutes: 150,
     price: '13.000 Ft-tól',
     slug: 'obunda/szalkas-tacsko-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
@@ -84,7 +84,7 @@ export const events: EventType[] = [
   {
     id: 'bolognese',
     name: 'Bolognese',
-    duration: '150m',
+    durationMinutes: 150,
     price: '11.000 Ft-tól',
     slug: 'obunda/bolognese',
     description: '',
@@ -93,7 +93,7 @@ export const events: EventType[] = [
   {
     id: 'corgi',
     name: 'Corgi',
-    duration: '90m',
+    durationMinutes: 90,
     price: '10.000 Ft-tól',
     slug: 'obunda/corgi',
     description: '',
@@ -102,7 +102,7 @@ export const events: EventType[] = [
   {
     id: 'shiba-inu',
     name: 'Shiba Inu',
-    duration: '90m',
+    durationMinutes: 90,
     price: '9.500 Ft-tól',
     slug: 'obunda/shiba-inu',
     description: '',
@@ -111,7 +111,7 @@ export const events: EventType[] = [
   {
     id: 'spaniel-nyirva',
     name: 'Spániel - Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '12.000 Ft-tól',
     slug: 'obunda/spaniel-nyirva',
     description: '',
@@ -120,7 +120,7 @@ export const events: EventType[] = [
   {
     id: 'spaniel-trimmelve',
     name: 'Spániel - Trimmelve',
-    duration: '180m',
+    durationMinutes: 180,
     price: '15.000 Ft-tól',
     slug: 'obunda/spaniel-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
@@ -129,7 +129,7 @@ export const events: EventType[] = [
   {
     id: 'ausztral-juhasz',
     name: 'Ausztrál Juhászkutya',
-    duration: '120m',
+    durationMinutes: 120,
     price: '14.000 Ft-tól',
     slug: 'obunda/ausztral-juhasz',
     description: '',
@@ -138,7 +138,7 @@ export const events: EventType[] = [
   {
     id: 'sheltie',
     name: 'Sheltie',
-    duration: '120m',
+    durationMinutes: 120,
     price: '12.500 Ft-tól',
     slug: 'obunda/sheltie',
     description: '',
@@ -147,7 +147,7 @@ export const events: EventType[] = [
   {
     id: 'border-collie',
     name: 'Border Collie',
-    duration: '120m',
+    durationMinutes: 120,
     price: '13.500 Ft-tól',
     slug: 'obunda/border-collie',
     description: '',
@@ -156,7 +156,7 @@ export const events: EventType[] = [
   {
     id: 'mudi',
     name: 'Mudi',
-    duration: '90m',
+    durationMinutes: 90,
     price: '10.500 Ft-tól',
     slug: 'obunda/mudi',
     description: '',
@@ -165,7 +165,7 @@ export const events: EventType[] = [
   {
     id: 'pumi',
     name: 'Pumi',
-    duration: '120m',
+    durationMinutes: 120,
     price: '14.000 Ft-tól',
     slug: 'obunda/pumi',
     description: '',
@@ -174,7 +174,7 @@ export const events: EventType[] = [
   {
     id: 'lagotto',
     name: 'Lagotto',
-    duration: '150m',
+    durationMinutes: 150,
     price: '15.000 Ft-tól',
     slug: 'obunda/lagotto',
     description: '',
@@ -183,7 +183,7 @@ export const events: EventType[] = [
   {
     id: 'puli-nyirva',
     name: 'Puli - Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '14.000 Ft-tól',
     slug: 'obunda/puli-nyirva',
     description: '',
@@ -192,7 +192,7 @@ export const events: EventType[] = [
   {
     id: 'husky',
     name: 'Husky',
-    duration: '120m',
+    durationMinutes: 120,
     price: '16.500 Ft-tól',
     slug: 'obunda/husky',
     description: '',
@@ -201,7 +201,7 @@ export const events: EventType[] = [
   {
     id: 'malamut',
     name: 'Malamut',
-    duration: '150m',
+    durationMinutes: 150,
     price: '19.000 Ft-tól',
     slug: 'obunda/malamut',
     description: '',
@@ -210,7 +210,7 @@ export const events: EventType[] = [
   {
     id: 'szamojed',
     name: 'Szamojed',
-    duration: '150m',
+    durationMinutes: 150,
     price: '19.000 Ft-tól',
     slug: 'obunda/szamojed',
     description: '',
@@ -219,7 +219,7 @@ export const events: EventType[] = [
   {
     id: 'berni-pasztor',
     name: 'Berni Pásztor',
-    duration: '180m',
+    durationMinutes: 180,
     price: '22.000 Ft-tól',
     slug: 'obunda/berni-pasztor',
     description: '',
@@ -228,7 +228,7 @@ export const events: EventType[] = [
   {
     id: 'golden-retriever',
     name: 'Golden Retriever',
-    duration: '120m',
+    durationMinutes: 120,
     price: '15.500 Ft-tól',
     slug: 'obunda/golden-retriever',
     description: '',
@@ -237,7 +237,7 @@ export const events: EventType[] = [
   {
     id: 'nemetjuhasz',
     name: 'Németjuhász',
-    duration: '120m',
+    durationMinutes: 120,
     price: '16.500 Ft-tól',
     slug: 'obunda/nemetjuhasz',
     description: '',
@@ -246,7 +246,7 @@ export const events: EventType[] = [
   {
     id: 'skotjuhasz',
     name: 'Skótjuhász',
-    duration: '180m',
+    durationMinutes: 180,
     price: '18.500 Ft-tól',
     slug: 'obunda/skotjuhasz',
     description: '',
@@ -255,7 +255,7 @@ export const events: EventType[] = [
   {
     id: 'tacsko',
     name: 'Tacskó',
-    duration: '60m',
+    durationMinutes: 60,
     price: '6.500 Ft-tól',
     slug: 'obunda/tacsko',
     description: '',
@@ -264,7 +264,7 @@ export const events: EventType[] = [
   {
     id: 'francia-bulldog',
     name: 'Francia Bulldog',
-    duration: '60m',
+    durationMinutes: 60,
     price: '7.500 Ft-tól',
     slug: 'obunda/francia-bulldog',
     description: '',
@@ -273,7 +273,7 @@ export const events: EventType[] = [
   {
     id: 'mopsz',
     name: 'Mopsz',
-    duration: '60m',
+    durationMinutes: 60,
     price: '7.500 Ft-tól',
     slug: 'obunda/mopsz',
     description: '',
@@ -282,7 +282,7 @@ export const events: EventType[] = [
   {
     id: 'beagle',
     name: 'Beagle',
-    duration: '60m',
+    durationMinutes: 60,
     price: '8.500 Ft-tól',
     slug: 'obunda/beagle',
     description: '',
@@ -291,7 +291,7 @@ export const events: EventType[] = [
   {
     id: 'vizsla',
     name: 'Vizsla',
-    duration: '60m',
+    durationMinutes: 60,
     price: '9.500 Ft-tól',
     slug: 'obunda/vizsla',
     description: '',
@@ -300,7 +300,7 @@ export const events: EventType[] = [
   {
     id: 'labrador',
     name: 'Labrador',
-    duration: '90m',
+    durationMinutes: 90,
     price: '10.500 Ft-tól',
     slug: 'obunda/labrador',
     description: '',
@@ -309,7 +309,7 @@ export const events: EventType[] = [
   {
     id: 'uszkar-toy',
     name: 'Uszkár - Toy (24-28cm)',
-    duration: '90m',
+    durationMinutes: 90,
     price: '10.500 Ft-tól',
     slug: 'obunda/uszkar-toy',
     description: '',
@@ -318,7 +318,7 @@ export const events: EventType[] = [
   {
     id: 'uszkar-torpe',
     name: 'Uszkár - Törpe (28-35cm)',
-    duration: '120m',
+    durationMinutes: 120,
     price: '11.500 Ft-tól',
     slug: 'obunda/uszkar-torpe',
     description: '',
@@ -327,7 +327,7 @@ export const events: EventType[] = [
   {
     id: 'uszkar-kozep',
     name: 'Uszkár - Közép (35-45cm)',
-    duration: '150m',
+    durationMinutes: 150,
     price: '13.500 Ft-tól',
     slug: 'obunda/uszkar-kozep',
     description: '',
@@ -336,7 +336,7 @@ export const events: EventType[] = [
   {
     id: 'uszkar-orias',
     name: 'Uszkár - Óriás (45cm-)',
-    duration: '180m',
+    durationMinutes: 180,
     price: '19.500 Ft-tól',
     slug: 'obunda/uszkar-orias',
     description: '',
@@ -344,17 +344,17 @@ export const events: EventType[] = [
   },
   {
     id: 'fogtisztitas',
-    name: 'Ultrahangos fogtisztítás',
-    duration: '30m',
+    name: 'Ultrahangos fogkőeltávolítás',
+    durationMinutes: 30,
     price: '16.000 Ft-tól',
-    slug: 'obunda/ultrahangos-fogtisztitas',
+    slug: 'obunda/ultrahangos-fogkoeltavolitas',
     description: '',
     category: 'További szolgáltatások',
   },
   {
     id: 'schnauzer-torpe-nyirva',
     name: 'Schnauzer - Törpe Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '11.000 Ft-tól',
     slug: 'obunda/schnauzer-orias-nyirva',
     description: '',
@@ -363,7 +363,7 @@ export const events: EventType[] = [
   {
     id: 'schnauzer-torpe-trimmelve',
     name: 'Schnauzer - Törpe Trimmelve',
-    duration: '150m',
+    durationMinutes: 150,
     price: '13.500 Ft-tól',
     slug: 'obunda/schnauzer-orias-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
@@ -372,7 +372,7 @@ export const events: EventType[] = [
   {
     id: 'schnauzer-kozep-nyirva',
     name: 'Schnauzer - Közép Nyírva',
-    duration: '120m',
+    durationMinutes: 120,
     price: '13.000 Ft-tól',
     slug: 'obunda/schnauzer-kozep-nyirva',
     description: '',
@@ -381,7 +381,7 @@ export const events: EventType[] = [
   {
     id: 'schnauzer-kozep-trimmelve',
     name: 'Schnauzer - Közép Trimmelve',
-    duration: '150m',
+    durationMinutes: 150,
     price: '15.500 Ft-tól',
     slug: 'obunda/schnauzer-kozep-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése',
@@ -390,7 +390,7 @@ export const events: EventType[] = [
   {
     id: 'schnauzer-orias-nyirva',
     name: 'Schnauzer - Óriás Nyírva',
-    duration: '150m',
+    durationMinutes: 150,
     price: '17.500 Ft-tól',
     slug: 'obunda/schnauzer-orias-nyirva-1',
     description: '',
@@ -399,7 +399,7 @@ export const events: EventType[] = [
   {
     id: 'maltai',
     name: 'Máltai',
-    duration: '120m',
+    durationMinutes: 120,
     price: '10.500 Ft-tól',
     slug: 'obunda/maltai',
     description: '',
@@ -408,7 +408,7 @@ export const events: EventType[] = [
   {
     id: 'yorkshire-nagy',
     name: 'Yorkshire Terrier - 5kg felett',
-    duration: '120m',
+    durationMinutes: 120,
     price: '9.500 Ft-tól',
     slug: 'obunda/yorkshire-terrier-5kg-felett',
     description: '',
@@ -417,7 +417,7 @@ export const events: EventType[] = [
   {
     id: 'yorkshire-kicsi',
     name: 'Yorkshire Terrier - 5kg alatt',
-    duration: '90m',
+    durationMinutes: 90,
     price: '9.000 Ft-tól',
     slug: 'obunda/yorkshire-terrier-5kg-alatt',
     description: '',
@@ -426,7 +426,7 @@ export const events: EventType[] = [
   {
     id: 'havanese',
     name: 'Havanese',
-    duration: '120m',
+    durationMinutes: 120,
     price: '10.500 Ft-tól',
     slug: 'obunda/havanese',
     description: '',
@@ -435,7 +435,7 @@ export const events: EventType[] = [
   {
     id: 'bichon-frise',
     name: 'Bichon Frisé',
-    duration: '150m',
+    durationMinutes: 150,
     price: '12.500 Ft-tól',
     slug: 'obunda/bichon-frise',
     description: '',
