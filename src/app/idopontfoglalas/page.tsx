@@ -6,7 +6,7 @@ import Cal, { getCalApi } from '@calcom/embed-react'
 import { events } from '@/data/events'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Calendar, Clock, Search, X, CalendarCheck } from 'lucide-react'
+import { Calendar, Clock, Search, X, CalendarCheck, Phone } from 'lucide-react'
 
 // Utility function to remove Hungarian accents for search
 function removeAccents(str: string): string {
@@ -208,22 +208,31 @@ export default function IdopontFoglalasPage() {
                             )}
                           </div>
 
-                          <Button
-                            onClick={() => toggleEvent(event.id)}
-                            variant={expandedEventId === event.id ? 'neutral' : 'default'}
-                          >
-                            {expandedEventId === event.id ? (
-                              <>
-                                <X className="w-4 h-4 mr-2" />
-                                Bezár
-                              </>
-                            ) : (
-                              <>
-                                <Calendar className="w-4 h-4 mr-2" />
-                                Foglalás
-                              </>
-                            )}
-                          </Button>
+                          {!event.slug || event.slug === '' ? (
+                            <Button asChild variant="neutral">
+                              <Link href="/kapcsolat">
+                                <Phone className="w-4 h-4 mr-2" />
+                                Kapcsolat
+                              </Link>
+                            </Button>
+                          ) : (
+                            <Button
+                              onClick={() => toggleEvent(event.id)}
+                              variant={expandedEventId === event.id ? 'neutral' : 'default'}
+                            >
+                              {expandedEventId === event.id ? (
+                                <>
+                                  <X className="w-4 h-4 mr-2" />
+                                  Bezár
+                                </>
+                              ) : (
+                                <>
+                                  <Calendar className="w-4 h-4 mr-2" />
+                                  Foglalás
+                                </>
+                              )}
+                            </Button>
+                          )}
                         </div>
                       </div>
 
