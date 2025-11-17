@@ -222,12 +222,12 @@ export default function IdopontFoglalasPage() {
                             >
                               {expandedEventId === event.id ? (
                                 <>
-                                  <X className="w-4 h-4 mr-2" />
+                                  <X />
                                   Bezár
                                 </>
                               ) : (
                                 <>
-                                  <Calendar className="w-4 h-4 mr-2" />
+                                  <Calendar />
                                   Foglalás
                                 </>
                               )}
@@ -239,7 +239,6 @@ export default function IdopontFoglalasPage() {
                       {/* Expanded Cal.com Embed */}
                       {expandedEventId === event.id && calLoaded && (
                         <Cal
-                          namespace="schnauzer-orias-nyirva"
                           calLink={event.slug}
                           style={{
                             width: '100%',
