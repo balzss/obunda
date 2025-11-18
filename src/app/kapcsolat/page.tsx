@@ -1,10 +1,39 @@
 import Link from 'next/link'
 import { Phone, Mail, MapPin, Instagram, Facebook, Clock } from 'lucide-react'
 import { businessHours } from '@/data/hours'
+import { BreadcrumbStructuredData } from '@/components/structured-data/breadcrumb'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Kapcsolat',
+  keywords: ['kapcsolat', 'elérhetőség', 'nyitvatartás', 'cím', 'telefon', 'Budapest Óbuda'],
+  openGraph: {
+    title: 'Kapcsolat | Óbunda Kutyakozmetika',
+    url: 'https://obunda.hu/kapcsolat',
+    type: 'website',
+    images: [
+      {
+        url: 'https://obunda.hu/kati2.png',
+        width: 1200,
+        height: 630,
+        alt: 'Óbunda Kutyakozmetika Kapcsolat',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://obunda.hu/kapcsolat',
+  },
+}
 
 export default function KapcsolatPage() {
   return (
     <section>
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Kezdőlap', url: 'https://obunda.hu/' },
+          { name: 'Kapcsolat', url: 'https://obunda.hu/kapcsolat' },
+        ]}
+      />
       <h2 className="text-3xl font-semibold mb-4">Kapcsolat</h2>
 
       <div className="flex flex-col gap-2">

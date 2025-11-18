@@ -1,9 +1,38 @@
 import Image from 'next/image'
 import { Testimonials } from '@/custom'
+import { BreadcrumbStructuredData } from '@/components/structured-data/breadcrumb'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Rólam',
+  keywords: ['Bakács Katalin', 'kutyakozmetikus', 'OKJ', 'tapasztalat', 'Budapest'],
+  openGraph: {
+    title: 'Rólam | Óbunda Kutyakozmetika',
+    url: 'https://obunda.hu/rolam',
+    type: 'website',
+    images: [
+      {
+        url: 'https://obunda.hu/kati4.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Bakács Katalin - Óbunda Kutyakozmetika',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://obunda.hu/rolam',
+  },
+}
 
 export default function RolamPage() {
   return (
     <section>
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Kezdőlap', url: 'https://obunda.hu/' },
+          { name: 'Rólam', url: 'https://obunda.hu/rolam' },
+        ]}
+      />
       <h2 className="text-3xl font-semibold mb-4">Rólam</h2>
       <div className="relative mb-8">
         <div className="hidden sm:block float-right ml-6 mb-4">

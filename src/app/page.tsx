@@ -2,6 +2,27 @@ import { Dog, Scissors, User, HandHeart, Heart, Award, Phone, Calendar } from 'l
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  keywords: ['kutyakozmetika', 'Budapest', 'Óbuda', 'kutyafésülés', 'kutya nyírás', 'trimmelés'],
+  openGraph: {
+    title: 'Óbunda Kutyakozmetika',
+    url: 'https://obunda.hu',
+    type: 'website',
+    images: [
+      {
+        url: 'https://obunda.hu/kati2.png',
+        width: 1200,
+        height: 630,
+        alt: 'Óbunda Kutyakozmetika',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://obunda.hu',
+  },
+}
 
 export default function ObundaMinimalContent() {
   return (

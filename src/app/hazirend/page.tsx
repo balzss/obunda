@@ -1,8 +1,29 @@
 import { Bone } from 'lucide-react'
+import { BreadcrumbStructuredData } from '@/components/structured-data/breadcrumb'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Házirend',
+  keywords: ['házirend', 'szabályok', 'látogatás', 'feltételek'],
+  openGraph: {
+    title: 'Házirend | Óbunda Kutyakozmetika',
+    url: 'https://obunda.hu/hazirend',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://obunda.hu/hazirend',
+  },
+}
 
 export default function HazirendPage() {
   return (
     <section>
+      <BreadcrumbStructuredData
+        items={[
+          { name: 'Kezdőlap', url: 'https://obunda.hu/' },
+          { name: 'Házirend', url: 'https://obunda.hu/hazirend' },
+        ]}
+      />
       <h2 className="text-3xl font-semibold mb-4">Házirend</h2>
       <ul className="space-y-2 text-black">
         <li className="flex gap-2 items-center">
