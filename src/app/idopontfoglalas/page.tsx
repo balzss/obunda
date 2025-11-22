@@ -69,6 +69,7 @@ export default function IdopontFoglalasPage() {
     'Rövidszőrűek',
     'Uszkárok',
     'Schnauzerek',
+    'Cicák',
     'További szolgáltatások',
   ]
 

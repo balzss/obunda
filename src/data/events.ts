@@ -592,7 +592,7 @@ export const events: EventType[] = [
     price: '6.500 Ft-tól',
     slug: 'obunda/cica-nyirva',
     description: '',
-    category: 'Macskák',
+    category: 'Cicák',
   },
   {
     id: 'cica-fesulve',
@@ -601,6 +601,6 @@ export const events: EventType[] = [
     price: '4.500 Ft-tól',
     slug: 'obunda/cica-fesulve',
     description: '',
-    category: 'Macskák',
+    category: 'Cicák',
   },
 ]
