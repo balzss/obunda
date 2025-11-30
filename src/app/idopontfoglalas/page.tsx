@@ -7,6 +7,8 @@ import { events } from '@/data/events'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Calendar, Clock, Search, X, CalendarCheck, Phone } from 'lucide-react'
+// TODO: Uncomment when ready to enable category tabs
+// import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 // Utility function to remove Hungarian accents for search
 function removeAccents(str: string): string {
@@ -30,10 +32,23 @@ function formatDurationHungarian(minutes: number): string {
   }
 }
 
+const CATEGORIES = [
+  'Kistestűek',
+  'Közepes testűek',
+  'Nagytestűek',
+  'Rövidszőrűek',
+  'Uszkárok',
+  'Schnauzerek',
+  'Cicák',
+  'További szolgáltatások',
+] as const
+
 export default function IdopontFoglalasPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [expandedEventId, setExpandedEventId] = useState<string | null>(null)
   const [calLoaded, setCalLoaded] = useState(false)
+  // TODO: Uncomment when ready to enable category tabs
+  // const [selectedCategory, setSelectedCategory] = useState<string>('all')
 
   // Initialize Cal.com API
   useEffect(() => {
@@ -57,23 +72,17 @@ export default function IdopontFoglalasPage() {
   }, [])
 
   // Filter events based on search query (accent-insensitive)
+  // TODO: Uncomment category filtering when ready to enable category tabs
   const filteredEvents = events
-    .filter((event) => removeAccents(event.name).includes(removeAccents(searchQuery)))
+    .filter((event) => {
+      // const matchesCategory = selectedCategory === 'all' || event.category === selectedCategory
+      const matchesSearch = removeAccents(event.name).includes(removeAccents(searchQuery))
+      return matchesSearch // return matchesCategory && matchesSearch
+    })
     .sort((a, b) => a.name.localeCompare(b.name))
 
   // Group events by category
-  const categories = [
-    'Kistestűek',
-    'Közepes testűek',
-    'Nagytestűek',
-    'Rövidszőrűek',
-    'Uszkárok',
-    'Schnauzerek',
-    'Cicák',
-    'További szolgáltatások',
-  ]
-
-  const groupedEvents = categories.reduce(
+  const groupedEvents = CATEGORIES.reduce(
     (acc, category) => {
       acc[category] = filteredEvents.filter((event) => event.category === category)
       return acc
@@ -151,6 +160,19 @@ export default function IdopontFoglalasPage() {
         </p>
       </div>
 
+      {/* TODO: Uncomment when ready to enable category tabs */}
+      {/* Category Filter Tabs */}
+      {/* <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="mb-6">
+        <TabsList className="flex-wrap h-auto">
+          <TabsTrigger value="all">Összes</TabsTrigger>
+          {CATEGORIES.map((category) => (
+            <TabsTrigger key={category} value={category}>
+              {category}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+      </Tabs> */}
+
       {/* Search Input */}
       <div className="relative mb-6">
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -168,7 +190,7 @@ export default function IdopontFoglalasPage() {
         {filteredEvents.length === 0 ? (
           <div className="text-center py-8 text-gray-500">Nem található ilyen szolgáltatás</div>
         ) : (
-          categories.map((category) => {
+          CATEGORIES.map((category) => {
             const categoryEvents = groupedEvents[category]
             if (categoryEvents.length === 0) return null
 

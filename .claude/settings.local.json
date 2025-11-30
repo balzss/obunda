@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:cal.com)"
+      "WebFetch(domain:cal.com)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
