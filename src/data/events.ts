@@ -59,6 +59,14 @@ export const events: EventType[] = [
     category: 'Kistestűek',
   },
   {
+    id: 'cavapoo',
+    name: 'Cavapoo',
+    durationMinutes: 120,
+    price: '11.500 Ft-tól',
+    slug: 'obunda/cavapoo',
+    category: 'Kistestűek',
+  },
+  {
     id: 'corgi',
     name: 'Corgi',
     durationMinutes: 90,

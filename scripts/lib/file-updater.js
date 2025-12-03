@@ -56,7 +56,7 @@ function formatEventObject(event) {
 
 export async function updateEventsFile(
   finalEvents,
-  targetFile = '/var/home/bazsi/prog/obunda/src/data/events2.ts'
+  targetFile = '/var/home/bazsi/prog/obunda/src/data/events.ts'
 ) {
   console.log('\nGenerating TypeScript file...')
 
