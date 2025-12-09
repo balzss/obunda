@@ -116,6 +116,17 @@ export const events: EventType[] = [
     category: 'Kistestűek',
   },
   {
+    id: 'keverek-10-kg-alatt',
+    name: 'Keverék 10 kg alatt',
+    durationMinutes: 120,
+    price:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    slug: 'obunda/keverek-10-kg-alatt',
+    description:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    category: 'Kistestűek',
+  },
+  {
     id: 'maltai',
     name: 'Máltai',
     durationMinutes: 120,
@@ -246,6 +257,17 @@ export const events: EventType[] = [
     category: 'Közepes testűek',
   },
   {
+    id: 'keverek-10-20-kg',
+    name: 'Keverék 10-20 kg',
+    durationMinutes: 120,
+    price:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    slug: 'obunda/keverek-10-20-kg',
+    description:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    category: 'Közepes testűek',
+  },
+  {
     id: 'labradoodle',
     name: 'Labradoodle',
     durationMinutes: 150,
@@ -335,6 +357,28 @@ export const events: EventType[] = [
     category: 'Nagytestűek',
   },
   {
+    id: 'keverek-20-30-kg',
+    name: 'Keverék 20-30 kg',
+    durationMinutes: 150,
+    price:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    slug: 'obunda/keverek-20-30-kg',
+    description:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    category: 'Nagytestűek',
+  },
+  {
+    id: 'keverek-30-40-kg',
+    name: 'Keverék 30-40 kg',
+    durationMinutes: 150,
+    price:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    slug: 'obunda/keverek-30-40-kg',
+    description:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    category: 'Nagytestűek',
+  },
+  {
     id: 'malamut',
     name: 'Malamut',
     durationMinutes: 150,
@@ -396,6 +440,17 @@ export const events: EventType[] = [
     durationMinutes: 60,
     price: '7.500 Ft-tól',
     slug: 'obunda/francia-bulldog',
+    category: 'Rövidszőrűek',
+  },
+  {
+    id: 'keverek-rovidszoru',
+    name: 'Keverék rövidszőrű',
+    durationMinutes: 60,
+    price:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    slug: 'obunda/keverek-rovidszoru',
+    description:
+      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
     category: 'Rövidszőrűek',
   },
   {
