@@ -119,8 +119,7 @@ export const events: EventType[] = [
     id: 'keverek-10-kg-alatt',
     name: 'Keverék 10 kg alatt',
     durationMinutes: 120,
-    price:
-      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    price: '',
     slug: 'obunda/keverek-10-kg-alatt',
     description:
       'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
@@ -260,8 +259,7 @@ export const events: EventType[] = [
     id: 'keverek-10-20-kg',
     name: 'Keverék 10-20 kg',
     durationMinutes: 120,
-    price:
-      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    price: '',
     slug: 'obunda/keverek-10-20-kg',
     description:
       'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
@@ -360,8 +358,7 @@ export const events: EventType[] = [
     id: 'keverek-20-30-kg',
     name: 'Keverék 20-30 kg',
     durationMinutes: 150,
-    price:
-      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    price: '',
     slug: 'obunda/keverek-20-30-kg',
     description:
       'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
@@ -371,8 +368,7 @@ export const events: EventType[] = [
     id: 'keverek-30-40-kg',
     name: 'Keverék 30-40 kg',
     durationMinutes: 150,
-    price:
-      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    price: '',
     slug: 'obunda/keverek-30-40-kg',
     description:
       'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
@@ -446,8 +442,7 @@ export const events: EventType[] = [
     id: 'keverek-rovidszoru',
     name: 'Keverék rövidszőrű',
     durationMinutes: 60,
-    price:
-      'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+    price: '',
     slug: 'obunda/keverek-rovidszoru',
     description:
       'Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
