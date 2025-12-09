@@ -95,7 +95,7 @@ export default function ObundaMinimalContent() {
             </div>
             <h4 className="text-xl font-semibold text-gray-900 mb-3">Minden fajta, minden méret</h4>
             <p className="text-gray-600 leading-relaxed">
-              A legjobbat érdemlik! Kicsi chihuahuától a nagy newfundlandig.
+              A legjobbat érdemlik! Kicsi chihuahuától a nagy malamutig.
             </p>
           </div>
         </div>
