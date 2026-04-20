@@ -1,3 +1,5 @@
+import { parseDescription } from './event-parser.js'
+
 export const MANUAL_EVENT_IDS = [
   'fogtisztitas',
   'karomvagas',
@@ -70,12 +72,7 @@ function detectChanges(apiEvent, localEvent) {
   }
 
   // Parse API description to extract price and description
-  const cleaned = apiEvent.description.replace(/<br\s*\/?>/gi, ' ').trim()
-  const priceMatch = cleaned.match(/(\d{1,2}\.\d{3}\s+Ft-tól)/i)
-  const apiPrice = priceMatch ? priceMatch[1] : apiEvent.description
-  const apiDescription = priceMatch
-    ? cleaned.substring(0, cleaned.indexOf(priceMatch[1])).trim()
-    : ''
+  const { price: apiPrice, description: apiDescription } = parseDescription(apiEvent.description)
 
   // Check price
   if (apiPrice !== localEvent.price) {

@@ -128,7 +128,7 @@ export async function confirmFinalChanges() {
   console.log('FINAL CONFIRMATION')
   console.log('='.repeat(60))
 
-  const answer = await question(rl, '\nApply all approved changes to events2.ts? (y/n): ')
+  const answer = await question(rl, '\nApply all approved changes to events.ts? (y/n): ')
   rl.close()
 
   return answer.trim().toLowerCase() === 'y'
