@@ -7,6 +7,7 @@ import { events } from '@/data/events'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Calendar, Clock, Search, X, CalendarCheck, Phone } from 'lucide-react'
+import { WaitlistDialog } from '@/custom'
 // TODO: Uncomment when ready to enable category tabs
 // import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
@@ -158,6 +159,15 @@ export default function IdopontFoglalasPage() {
           <strong>Megjegyzés:</strong> Az árak a rendszeresen, 4-8 hetente ápolt kutyákra
           vonatkoznak. Elhanyagolt szőrzet esetén felár számítható fel.
         </p>
+      </div>
+
+      {/* Waitlist CTA */}
+      <div className="mb-6 p-4 bg-white rounded-lg border border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <p className="text-sm text-gray-700">
+          Nem találsz megfelelő szabad időpontot? Iratkozz fel a várólistára, és értesítelek, amint
+          felszabadul egy időpont.
+        </p>
+        <WaitlistDialog />
       </div>
 
       {/* TODO: Uncomment when ready to enable category tabs */}
