@@ -210,7 +210,7 @@ export const events: EventType[] = [
   {
     id: 'tacsko-trimmelve',
     name: 'Szálkás Tacskó - Trimmelve',
-    durationMinutes: 120,
+    durationMinutes: 150,
     price: '14.000 Ft-tól',
     slug: 'obunda/szalkas-tacsko-trimmelve',
     description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése.',
