@@ -1,8 +1,8 @@
 export function parseDescription(apiDescription) {
   const pricePattern = /\d{1,2}\.\d{3}\s+Ft-tól/i
 
-  // Split by <br> into lines, then classify each line as price or description
-  const lines = apiDescription.split(/<br\s*\/?>/i).map(l => l.trim()).filter(Boolean)
+  // Split by <br> or newlines into lines, then classify each line as price or description
+  const lines = apiDescription.split(/<br\s*\/?>|\r?\n+/i).map(l => l.trim()).filter(Boolean)
 
   const priceLines = []
   const descriptionLines = []

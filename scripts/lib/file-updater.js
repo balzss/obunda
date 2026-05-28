@@ -31,7 +31,10 @@ function sortEventsByCategory(events) {
 }
 
 function escapeString(str) {
-  return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'")
+  return str
+    .replace(/\\/g, '\\\\')
+    .replace(/'/g, "\\'")
+    .replace(/\r?\n/g, ' ')
 }
 
 function formatEventObject(event) {
@@ -56,7 +59,7 @@ function formatEventObject(event) {
 
 export async function updateEventsFile(
   finalEvents,
-  targetFile = '/var/home/bazsi/prog/obunda/src/data/events.ts'
+  targetFile = './src/data/events.ts'
 ) {
   console.log('\nGenerating TypeScript file...')
 
