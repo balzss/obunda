@@ -164,7 +164,7 @@ export default function IdopontFoglalasPage() {
       {/* Waitlist CTA */}
       <div className="mb-6 p-4 bg-white rounded-lg border border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <p className="text-sm text-gray-700">
-          Nem találsz megfelelő szabad időpontot? Az előjegyzési idő jelenleg 2–3 hét, de ha
+          Nem találsz megfelelő szabad időpontot? Az előjegyzési idő jelenleg 4–5 hét, de ha
           szeretnél értesülni felszabaduló időpontról, iratkozz fel a várólistára, és értesítelek.
         </p>
         <WaitlistDialog />

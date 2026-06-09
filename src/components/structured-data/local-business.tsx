@@ -34,7 +34,7 @@ export function LocalBusinessStructuredData() {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: 'Tuesday',
         opens: '09:00',
-        closes: '17:30',
+        closes: '15:30',
       },
       {
         '@type': 'OpeningHoursSpecification',
@@ -52,7 +52,7 @@ export function LocalBusinessStructuredData() {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: 'Friday',
         opens: '09:00',
-        closes: '17:30',
+        closes: '15:30',
       },
     ],
     sameAs: [
