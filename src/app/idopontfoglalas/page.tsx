@@ -122,12 +122,6 @@ export default function IdopontFoglalasPage() {
         <li className="flex gap-2 items-center">
           <CalendarCheck className="w-4 h-4" />
           <div>
-            Telefonon vagy SMS-ben: <Link href="tel:+36305866487">+36 30 586 6487</Link>
-          </div>
-        </li>
-        <li className="flex gap-2 items-center">
-          <CalendarCheck className="w-4 h-4" />
-          <div>
             Messenger üzenetben:{' '}
             <Link
               href="https://www.facebook.com/profile.php?id=61576907870809"
@@ -164,7 +158,8 @@ export default function IdopontFoglalasPage() {
       {/* Waitlist CTA */}
       <div className="mb-6 p-4 bg-white rounded-lg border border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
         <p className="text-sm text-gray-700">
-          Nem találsz megfelelő szabad időpontot? Az előjegyzési idő jelenleg 4–5 hét, de ha
+          Nem találsz megfelelő szabad időpontot? Sajnos az online naptárban elérhető időpontokon
+          kívül más napot vagy időpontot nem tudok ajánlani. Az előjegyzési idő jelenleg 3–4 hét. Ha
           szeretnél értesülni felszabaduló időpontról, iratkozz fel a várólistára, és értesítelek.
         </p>
         <WaitlistDialog />
