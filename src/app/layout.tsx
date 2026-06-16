@@ -17,6 +17,19 @@ export const metadata: Metadata = {
     locale: 'hu_HU',
     url: 'https://obunda.hu',
     siteName: 'Óbunda Kutyakozmetika',
+    images: [
+      {
+        url: 'https://obunda.hu/share_thumbnail.jpg',
+        width: 631,
+        height: 808,
+        alt: 'Óbunda Kutyakozmetika',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Óbunda Kutyakozmetika',
+    images: ['https://obunda.hu/share_thumbnail.jpg'],
   },
 }
 

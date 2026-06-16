@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://obunda.hu/kati2.png',
-        width: 1200,
-        height: 630,
+        url: 'https://obunda.hu/share_thumbnail.jpg',
+        width: 631,
+        height: 808,
         alt: 'Óbunda Kutyakozmetika Kapcsolat',
       },
     ],

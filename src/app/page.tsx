@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://obunda.hu/kati2.png',
-        width: 1200,
-        height: 630,
+        url: 'https://obunda.hu/share_thumbnail.jpg',
+        width: 631,
+        height: 808,
         alt: 'Óbunda Kutyakozmetika',
       },
     ],
@@ -113,7 +113,7 @@ export default function ObundaMinimalContent() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/photo1.jpeg"
+              src="/photo1.webp"
               alt="Kutyakozmetikai munka"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -121,7 +121,7 @@ export default function ObundaMinimalContent() {
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/photo2.jpeg"
+              src="/photo2.webp"
               alt="Kutyakozmetikai munka"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -129,7 +129,7 @@ export default function ObundaMinimalContent() {
           </div>
           <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
             <Image
-              src="/photo3.jpeg"
+              src="/photo3.webp"
               alt="Kutyakozmetikai munka"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"

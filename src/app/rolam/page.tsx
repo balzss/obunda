@@ -37,7 +37,7 @@ export default function RolamPage() {
       <div className="relative mb-8">
         <div className="hidden sm:block float-right ml-6 mb-4">
           <Image
-            src="/kati4.jpeg"
+            src="/kati4.webp"
             alt="Kati - Kutyakozmetikus"
             width="300"
             height="300"
@@ -70,7 +70,7 @@ export default function RolamPage() {
         </p>
         <div className="sm:hidden mt-6 flex justify-center">
           <Image
-            src="/kati4.jpeg"
+            src="/kati4.webp"
             alt="Kati - Kutyakozmetikus"
             width="300"
             height="300"

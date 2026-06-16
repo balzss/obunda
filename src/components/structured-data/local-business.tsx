@@ -5,7 +5,7 @@ export function LocalBusinessStructuredData() {
     '@id': 'https://obunda.hu/#business',
     name: 'Óbunda Kutyakozmetika',
     description: 'Professzionális kutyakozmetika Budapest III. kerületében',
-    image: 'https://obunda.hu/kati2.png',
+    image: 'https://obunda.hu/kati4.jpeg',
     url: 'https://obunda.hu',
     telephone: '+36305866487',
     email: 'bakacskatalin@gmail.com',

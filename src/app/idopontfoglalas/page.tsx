@@ -6,7 +6,7 @@ import Cal, { getCalApi } from '@calcom/embed-react'
 import { events } from '@/data/events'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Calendar, Clock, Search, X, CalendarCheck, Phone } from 'lucide-react'
+import { Calendar, Clock, Search, X, Phone } from 'lucide-react'
 import { WaitlistDialog } from '@/custom'
 // TODO: Uncomment when ready to enable category tabs
 // import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -102,50 +102,6 @@ export default function IdopontFoglalasPage() {
   return (
     <section>
       <h2 className="text-3xl font-semibold mb-4">Időpontfoglalás</h2>
-
-      {/* Contact Options List */}
-      <ul className="space-y-2 text-black mb-6">
-        <li className="flex gap-2 items-center">
-          <CalendarCheck className="w-4 h-4" />
-          <div>
-            <button
-              onClick={() => {
-                const firstEvent = document.querySelector('[class*="border-gray-200"]')
-                firstEvent?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-              }}
-              className="text-left"
-            >
-              Online (lentebb)
-            </button>
-          </div>
-        </li>
-        <li className="flex gap-2 items-center">
-          <CalendarCheck className="w-4 h-4" />
-          <div>
-            Messenger üzenetben:{' '}
-            <Link
-              href="https://www.facebook.com/profile.php?id=61576907870809"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Óbunda kutyakozmetika
-            </Link>
-          </div>
-        </li>
-        <li className="flex gap-2 items-center">
-          <CalendarCheck className="w-4 h-4" />
-          <div>
-            Instagram üzenetben:{' '}
-            <Link
-              href="https://www.instagram.com/obunda_kutyakozmetika"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @obunda_kutyakozmetika
-            </Link>
-          </div>
-        </li>
-      </ul>
 
       {/* Additional Info - Pricing note */}
       <div className="mb-6 p-4 bg-brand-purple-50 rounded-lg border border-brand-purple-100">
