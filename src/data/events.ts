@@ -320,7 +320,7 @@ export const events: EventType[] = [
   {
     id: 'labradoodle',
     name: 'Labradoodle',
-    durationMinutes: 150,
+    durationMinutes: 120,
     price: '15.000 Ft-tól',
     slug: 'obunda/labradoodle',
     category: 'Közepes testűek',
@@ -388,15 +388,6 @@ export const events: EventType[] = [
     durationMinutes: 150,
     price: 'ritkább szőrzet: 13.000 Ft-tól / dúsabb szőrzet: 15.000 Ft-tól',
     slug: 'obunda/spaniel-nyirva',
-    category: 'Közepes testűek',
-  },
-  {
-    id: 'spaniel-trimmelve',
-    name: 'Spániel - Trimmelve',
-    durationMinutes: 210,
-    price: 'ritkább szőrzet: 19.000 Ft-tól / dúsabb szőrzet: 21.000 Ft-tól',
-    slug: 'obunda/spaniel-trimmelve',
-    description: 'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése.',
     category: 'Közepes testűek',
   },
   {
