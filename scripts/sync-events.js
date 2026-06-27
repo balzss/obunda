@@ -24,7 +24,9 @@ const CATEGORY_OVERRIDES = [
   { match: 'közép-spicc', category: 'Közepes testűek' },
   { match: 'spicc-kozep', category: 'Közepes testűek' },
   { match: 'nyuszi', category: 'További szolgáltatások' },
-  { match: 'nyúl', category: 'További szolgáltatások' }
+  { match: 'nyúl', category: 'További szolgáltatások' },
+  { match: 'coton', category: 'Kistestűek' },
+  { match: 'biewer', category: 'Kistestűek' }
 ]
 
 function pickCategory(event) {
