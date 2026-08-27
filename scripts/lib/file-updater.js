@@ -12,6 +12,7 @@ const CATEGORY_ORDER = [
   'Uszkárok',
   'Schnauzerek',
   'Cicák',
+  'Páros menü',
   'További szolgáltatások'
 ]
 

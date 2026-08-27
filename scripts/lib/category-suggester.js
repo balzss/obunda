@@ -6,6 +6,7 @@ export const CATEGORIES = [
   'Uszkárok',
   'Schnauzerek',
   'Cicák',
+  'Páros menü',
   'További szolgáltatások'
 ]
 

@@ -156,7 +156,7 @@ export const events: EventType[] = [
     price: '',
     slug: 'obunda/keverek-10-kg-alatt-trimmelve',
     description:
-      'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése. Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
+      'Szálkás és drótszőrű kutyáknak Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése. Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani.',
     category: 'Kistestűek',
   },
   {
@@ -322,7 +322,7 @@ export const events: EventType[] = [
     price: '',
     slug: 'obunda/keverek-10-20-kg-trimmelve',
     description:
-      'Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése. Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani',
+      'Szálkás és drótszőrű kutyáknak Trimmelés: elhalt szőrszálak kézzel/késsel való kitépése. Az ár a kutyus megjelenésétől és szőrének típusától függ, ezért pontos összeget a helyszínen tudunk mondani',
     category: 'Közepes testűek',
   },
   {
@@ -759,6 +759,46 @@ export const events: EventType[] = [
     price: 'fürdés nélkül 9.500 Ft-tól',
     slug: 'obunda/cica-nyirva',
     category: 'Cicák',
+  },
+  {
+    id: 'long',
+    name: 'Páros menü - Long',
+    durationMinutes: 210,
+    price: '',
+    slug: 'obunda/long',
+    description:
+      '2 kutya, akinek kozmetikája összesen 5 órát vesz igénybe Ár a kutyusok megjelenésétől függ.',
+    category: 'Páros menü',
+  },
+  {
+    id: '2-kutya',
+    name: 'Páros menü - Medium',
+    durationMinutes: 210,
+    price: '',
+    slug: 'obunda/2-kutya',
+    description:
+      '2 kutya, akinek kozmetikája összesen 4 órát vesz igénybe Ár a kutyusok megjelenésétől függ.',
+    category: 'Páros menü',
+  },
+  {
+    id: 'quick',
+    name: 'Páros menü - Quick',
+    durationMinutes: 180,
+    price: '',
+    slug: 'obunda/quick',
+    description:
+      '2 kutya, akinek kozmetikája összesen 3 órát vesz igénybe Ár a kutyusok megjelenésétől függ.',
+    category: 'Páros menü',
+  },
+  {
+    id: 'super-quick',
+    name: 'Páros menü - Super Quick',
+    durationMinutes: 120,
+    price: '',
+    slug: 'obunda/super-quick',
+    description:
+      '2 kutya, akinek kozmetikája összesen 2 órát vesz igénybe Ár a kutyusok megjelenésétől függ.',
+    category: 'Páros menü',
   },
   {
     id: 'buzmirigy',

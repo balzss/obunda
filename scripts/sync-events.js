@@ -27,7 +27,9 @@ const CATEGORY_OVERRIDES = [
   { match: 'nyúl', category: 'További szolgáltatások' },
   { match: 'coton', category: 'Kistestűek' },
   { match: 'biewer', category: 'Kistestűek' },
-  { match: 'ridgeback', category: 'Rövidszőrűek' }
+  { match: 'ridgeback', category: 'Rövidszőrűek' },
+  { match: 'páros menü', category: 'Páros menü' },
+  { match: 'paros menu', category: 'Páros menü' }
 ]
 
 function pickCategory(event) {
