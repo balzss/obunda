@@ -72,7 +72,10 @@ function detectChanges(apiEvent, localEvent) {
   }
 
   // Parse API description to extract price and description
-  const { price: apiPrice, description: apiDescription } = parseDescription(apiEvent.description)
+  const { price: apiPrice, description: apiDescription } = parseDescription(
+    apiEvent.description,
+    apiEvent.slug
+  )
 
   // Check price
   if (apiPrice !== localEvent.price) {
