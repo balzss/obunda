@@ -2,12 +2,8 @@
 // Keyed by slug; the pinned fields win over whatever the API returns, so a pinned
 // event shows up as unchanged in the diff instead of resurfacing every sync.
 // Once the text is corrected in the cal.com admin, delete the entry.
-const TEXT_PINS = {
-  // "13.000 ft-tól" — lowercase Ft
-  'bichon-frise': { price: 'Rövid fazon: 13.000 Ft-tól / Hosszabb fazon: 14.000 Ft-tól' },
-  // "ritkább szőrzet; " — semicolon instead of colon
-  husky: { price: 'ritkább szőrzet: 16.500 Ft-tól / dúsabb szőrzet: 18.000 Ft-tól' }
-}
+// Currently empty — every known typo has been corrected upstream.
+const TEXT_PINS = {}
 
 export function parseDescription(apiDescription, slug) {
   const pricePattern = /\d{1,2}\.\d{3}\s+Ft-tól/i
