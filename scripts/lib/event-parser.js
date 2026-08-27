@@ -6,10 +6,7 @@ const TEXT_PINS = {
   // "13.000 ft-tól" — lowercase Ft
   'bichon-frise': { price: 'Rövid fazon: 13.000 Ft-tól / Hosszabb fazon: 14.000 Ft-tól' },
   // "ritkább szőrzet; " — semicolon instead of colon
-  husky: { price: 'ritkább szőrzet: 16.500 Ft-tól / dúsabb szőrzet: 18.000 Ft-tól' },
-  // "ollózva: 17. 000 Ft-tól" — stray space breaks the price pattern, which pushes the
-  // second tier into the description. Pinned to the old wording until cal.com is fixed.
-  pumi: { price: 'nyírás: 15.000 Ft-tól', description: 'ollózás: 17.000 Ft-tól' }
+  husky: { price: 'ritkább szőrzet: 16.500 Ft-tól / dúsabb szőrzet: 18.000 Ft-tól' }
 }
 
 export function parseDescription(apiDescription, slug) {

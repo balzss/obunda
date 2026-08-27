@@ -386,9 +386,8 @@ export const events: EventType[] = [
     id: 'pumi',
     name: 'Pumi',
     durationMinutes: 150,
-    price: 'nyírás: 15.000 Ft-tól',
+    price: 'nyírva: 15.000 Ft-tól / ollózva: 17.000 Ft-tól',
     slug: 'obunda/pumi',
-    description: 'ollózás: 17.000 Ft-tól',
     category: 'Közepes testűek',
   },
   {
@@ -763,7 +762,7 @@ export const events: EventType[] = [
   {
     id: 'long',
     name: 'Páros menü - Long',
-    durationMinutes: 210,
+    durationMinutes: 300,
     price: '',
     slug: 'obunda/long',
     description:
