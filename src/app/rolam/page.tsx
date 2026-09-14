@@ -55,10 +55,10 @@ export default function RolamPage() {
           dolgozhatok.
         </p>
         <p className="text-gray-700 leading-relaxed text-lg mt-4">
-          Ez az első munkám, amit ennyire szenvedéllyel és lelkiismeretesen végzek. Végre valóra
-          ovált az álmom, és megnyithattam a saját kutyakozmetikámat! Úgy tekintek erre a szakmára,
-          mint egy folyamatosan fejlődő, izgalmas és motiváló hivatásra – amiben mindig van új
-          dolog, amit tanulhatok.
+          Ez az első olyan munkám, amit ennyire szenvedéllyel és lelkiismeretesen végzek. Végre
+          valóra vált az álmom, és megnyithattam a saját kutyakozmetikámat! Úgy tekintek erre a
+          szakmára, mint egy folyamatosan fejlődő, izgalmas és motiváló hivatásra – amiben mindig
+          van új dolog, amit tanulhatok.
         </p>
         <p className="text-gray-700 leading-relaxed text-lg mt-4">
           Különösen közel áll a szívemhez a mentett kutyusok segítése, hiszen sokszor méltatlanul

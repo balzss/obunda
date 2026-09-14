@@ -12,9 +12,9 @@ const testimonialsData: Testimonial[] = [
   {
     id: 1,
     quote:
-      'Gyönyôrûen és boldogan kaptuk vissza a kutyusunkat. Pedig nem volt egyszerû a  rasztás szôrcsomôkat kibontani... A törpe uszkárunk még soha nem volt lenyirva ilyen szépen mint ahogy Bakács Kati kutyakozmetikus profin elkészítette. Hálásan köszönjük. Biztos ide jövünk legközelebb is. ❤️',
-    author: 'Hajni',
-    petName: 'Málna, uszkár',
+      'Végre egy kozmetika, ahonnan Yara nem feszült és túltöltve jön ki, hanem vidáman és gyönyörűen, fajtaszabályosan nyírva, a bundája pedig tökéletesen kezelve! 🐶✨\nKati elképesztően türelmes és kedves, látszik rajta, mennyire szereti az állatokat és amit csinál.',
+    author: 'Mónika',
+    petName: 'Yara',
     rating: 5,
   },
   {
@@ -65,7 +65,7 @@ export function Testimonials() {
                 <StarRating rating={testimonial.rating} />
               </div>
               <blockquote className="mt-6 text-gray-700">
-                <p>„{testimonial.quote}”</p>
+                <p className="whitespace-pre-line">„{testimonial.quote}”</p>
               </blockquote>
             </div>
 
